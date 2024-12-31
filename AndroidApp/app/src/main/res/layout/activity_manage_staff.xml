@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/seablue"
+android:padding="10dp"
+tools:context=".ManageStaffActivity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="QK Bank Employees"
+    android:textColor="@color/Grey"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    android:layout_marginTop="10dp"
+    android:gravity="center_horizontal" />
+
+<Button
+    android:id="@+id/btnAddStaff"
+    android:layout_marginTop="60dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:text="Click to Add staff"
+    android:backgroundTint="@color/green"/>
+<TextView
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="For more details click on Employee!"
+    android:textColor="@color/shrine_red"
+    android:textSize="15sp"
+    android:textStyle="bold"
+    android:layout_marginTop="110dp"
+    android:gravity="center_horizontal" />
+
+<!-- Table Headers -->
+<TableRow
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="140dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserName"
+        android:textSize="15sp"
+        android:textColor="@color/Grey"
+        android:textStyle="bold"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/Grey"
+        android:textStyle="bold"
+        android:text="Role"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Staff Number"
+        android:textSize="15sp"
+        android:textColor="@color/Grey"
+        android:textStyle="bold"
+        android:layout_weight="1" />
+</TableRow>
+
+<!-- ListView to Display Transactions -->
+<ListView
+    android:id="@+id/lstEmployees"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="160dp"
+    android:divider="@android:color/darker_gray"
+    android:dividerHeight="1dp" />
+
+</RelativeLayout>

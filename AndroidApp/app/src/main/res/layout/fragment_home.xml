@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:padding="5dp"
+    android:id="@+id/homeFrag">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:textSize="30sp"
+        android:textColor="@color/blackblue"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <com.google.android.material.card.MaterialCardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/Grey">
+        <TableLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <!-- First Row -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <!-- View Balance Icon -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgViewBal"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@drawable/square_background"
+                        android:src="@drawable/baseline_account_balance_wallet_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View Balance"
+                        android:textColor="@color/blackblue"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:paddingTop="8dp"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+                <!-- Account Details Icon -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:focusable="true"
+                        android:id="@+id/imgAccountDetails"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@drawable/square_background"
+                        android:src="@drawable/baseline_account_balance_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Account Details"
+                        android:textColor="@color/blackblue"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:paddingTop="8dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <!-- Payments Icon -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:focusable="true"
+                        android:id="@+id/imgPayment"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@drawable/square_background"
+                        android:src="@drawable/baseline_swap_horiz_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payments"
+                        android:textColor="@color/blackblue"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:paddingTop="8dp" />
+                </LinearLayout>
+            </TableRow>
+
+            <!-- Second Row (Personal Details) -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:focusable="true"
+                        android:id="@+id/imgPersonal"
+                        android:layout_marginStart="21dp"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@drawable/square_background"
+                        android:src="@drawable/baseline_account_box_24" />
+
+                    <TextView
+                        android:layout_marginStart="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Personal Details"
+                        android:textSize="14sp"
+                        android:textColor="@color/blackblue"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:paddingTop="8dp" />
+                </LinearLayout>
+
+            </TableRow>
+
+
+        </TableLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:focusable="true"
+            android:id="@+id/imgFeeback"
+            android:layout_marginEnd="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_feedback_24" />
+
+        <TextView
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FeedBack"
+            android:textSize="11sp"
+            android:textColor="@color/blackblue"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+</FrameLayout>

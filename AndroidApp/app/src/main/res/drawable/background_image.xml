@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap
+
+            android:src="@drawable/ufsvision130"
+            android:gravity="center"
+            android:tileMode="disabled"
+             /> <!-- or another scaleType -->
+    </item>
+</layer-list>

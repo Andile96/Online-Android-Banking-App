@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LogInActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/ufsvision130"
+                android:contentDescription="@null"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_to_qk_bank"
+                android:textSize="33sp"
+                android:textColor="@color/darkblue"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/log_in"
+                android:textSize="33sp"
+                android:textColor="@color/darkblue"
+                android:textAlignment="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/Usernamelayout"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/username"
+                    app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="@color/blackblue"
+                    app:endIconContentDescription="Enter Email"
+                    app:endIconDrawable="@drawable/baseline_email_24"
+                    app:endIconMode="custom"
+                    app:shapeAppearanceOverlay="@style/OutlineRoundShape">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:id="@+id/txtSignInUserName"
+                        android:textColor="@color/darkblue" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/signInPasswordLayout"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:hint="@string/txtPassword"
+                    app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="@color/blackblue"
+                    app:endIconMode="password_toggle"
+                    app:shapeAppearanceOverlay="@style/OutlineRoundShape">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:id="@+id/txtSignInPassword"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:layout_width="360dp"
+                    android:layout_height="57dp"
+                    android:text="@string/txtsign_in"
+                    android:id="@+id/btnSign_In"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/shrine_red"
+                    app:shapeAppearanceOverlay="@style/OutlineRoundShape" />
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/don_t_have_an_account"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/txtRegister"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txtregister"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/realblue"/>
+                </TableRow>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

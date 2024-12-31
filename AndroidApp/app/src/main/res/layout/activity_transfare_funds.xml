@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/seablue"
+    tools:context=".TransfareFunds">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make Transaction"
+        android:textColor="@color/Grey"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"/>
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/pay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="40dp"
+            android:id="@+id/AccountNumlayout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Bank Acccount Number"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/blackblue"
+            app:endIconContentDescription="Enter Email"
+            android:textColorHint="@color/Grey"
+            app:endIconMode="custom"
+            app:shapeAppearanceOverlay="@style/OutlineRoundShape">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/txtAccountNum"
+                android:textColor="@color/darkblue" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="40dp"
+            android:id="@+id/Amountlayout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Amount"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/blackblue"
+            app:endIconContentDescription="Enter Email"
+            android:textColorHint="@color/Grey"
+            app:endIconMode="custom"
+            app:shapeAppearanceOverlay="@style/OutlineRoundShape">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:id="@+id/txtAmount"
+                android:textColor="@color/darkblue" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="40dp"
+            android:id="@+id/Referencelayout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Reference"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/blackblue"
+            app:endIconContentDescription="Enter Email"
+            android:textColorHint="@color/Grey"
+            app:endIconMode="custom"
+            app:shapeAppearanceOverlay="@style/OutlineRoundShape">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:id="@+id/txtReference"
+                android:textColor="@color/darkblue" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+
+            android:layout_width="360dp"
+            android:layout_height="57dp"
+            android:text="Send"
+            android:id="@+id/btnSent"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/shrine_red"
+            app:shapeAppearanceOverlay="@style/OutlineRoundShape" />
+
+    </LinearLayout>
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="100dp">
+
+        <ImageButton
+            android:visibility="invisible"
+            android:id="@+id/imgbtnSuccessful"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/baseline_check_circle_outline_24" />
+
+        <ImageButton
+            android:visibility="invisible"
+            android:id="@+id/imgbtnnotSend"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/baseline_cancel_24" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

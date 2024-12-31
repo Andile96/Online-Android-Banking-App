@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#CC333F</color>
+    <color name="little">#F4F1DE</color>
+    <color name="darkblue">#142134</color>
+    <color name="Gold">#FFD700</color>
+    <color name="yellow">#FCA311</color>
+    <color name="Grey">#E5E5E5</color>
+    <color name="orange">#F77F00</color>
+    <color name="green">#2A9D8F</color>
+    <color name="shrine_red">#b70901</color>
+    <color name="shrine_blue">#CAF0F8</color>
+    <color name="shrine_blue2">#90E0EF</color>
+    <color name="blackblue">#1C2533</color>
+    <color name="oxfordblue">#002147</color>
+    <color name="navyblue">#202A44</color>
+    <color name="bluegreen">#27445C</color>
+    <color name="cetablue">#001440</color>
+    <color name="greyblue">#677E9C</color>
+    <color name="seablue">#006994</color>
+    <color name="greenblue">#003C54</color>
+    <color name="charcoalgrey"> #36454f</color>
+    <color name="greyblack">#242F36</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="purpleblack">#2E223C</color>
+    <color name="Bripurple">#7851A9</color>
+    <color name="litGreen">#64B6AC</color>
+    <color name="litBlue">#DDDDFF</color>
+    <color name="realblue">#0000FF</color>
+
+
+
+
+
+</resources>

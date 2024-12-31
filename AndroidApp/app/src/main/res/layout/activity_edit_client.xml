@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".EditClientActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Edit Client Details"
+        android:textSize="33sp"
+        android:textColor="@color/darkblue"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/UserTypeLayoutEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/user_type"
+                    android:labelFor="@id/spnGender"
+                    app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="@color/blackblue"
+                    app:shapeAppearanceOverlay="@style/OutlineRoundShape">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/spnUserTypeEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:drawableEnd="@android:drawable/arrow_down_float"
+                        android:focusable="true"
+                        android:inputType="none"
+                        android:padding="10dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtStudentNumberEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/studentNum"
+                    android:paddingStart="7dp"
+                    app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="@color/blackblue"
+                    app:shapeAppearanceOverlay="@style/OutlineRoundShape"
+                    tools:ignore="RtlSymmetry"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textColor="@color/darkblue"
+                        android:id="@+id/txtStudNumEdit"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:paddingStart="7dp"
+                    android:id="@+id/txtStaffNumEdit"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/staffNum"
+                    app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="@color/blackblue"
+                    app:shapeAppearanceOverlay="@style/OutlineRoundShape"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textColor="@color/darkblue"
+                        android:id="@+id/txtStafNumEdit"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lastnamelayoutEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/last_name"
+                    app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="@color/blackblue"
+                    app:shapeAppearanceOverlay="@style/OutlineRoundShape">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textColor="@color/darkblue"
+                        android:id="@+id/txtlstNamEdit"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/firstnameLayoutEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/first_name"
+                    android:paddingStart="7dp"
+                    app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="@color/blackblue"
+                    app:shapeAppearanceOverlay="@style/OutlineRoundShape"
+                    tools:ignore="RtlSymmetry">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textColor="@color/darkblue"
+                        android:id="@+id/txtfstNamEdit"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+        </TableLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/NationalityLayoutEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txtnationality"
+
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/blackblue"
+            app:shapeAppearanceOverlay="@style/OutlineRoundShape">
+
+            <AutoCompleteTextView
+                android:id="@+id/spnNationalityEdit"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+
+                android:drawableEnd="@android:drawable/arrow_down_float"
+                android:focusable="true"
+                android:inputType="none"
+                android:padding="10dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/txtIDEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/identification"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/blackblue"
+            app:shapeAppearanceOverlay="@style/OutlineRoundShape"
+            android:visibility="gone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/darkblue"
+                android:id="@+id/txtIdentificationEdit"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/txtPassportEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/passport"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/blackblue"
+            app:shapeAppearanceOverlay="@style/OutlineRoundShape"
+            android:visibility="gone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/darkblue"
+                android:id="@+id/txtPassEdit"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <TableLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/GenderLayoutEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/select_gender"
+                    android:labelFor="@id/spnGender"
+                    app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="@color/blackblue"
+                    app:shapeAppearanceOverlay="@style/OutlineRoundShape"
+                    android:layout_weight="1">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/spnGenderEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:drawableEnd="@android:drawable/arrow_down_float"
+                        android:focusable="true"
+                        android:hint="@string/txtselect_gender"
+                        android:inputType="none"
+                        android:padding="10dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/dateInputLayoutEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/date"
+                    app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="@color/blackblue"
+                    app:endIconContentDescription="Pick a date"
+                    app:endIconDrawable="@drawable/baseline_calendar_month_24"
+                    app:endIconMode="custom"
+                    app:shapeAppearanceOverlay="@style/OutlineRoundShape"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/dateInputEditTextEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+        </TableLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/EmailLayoutEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/blackblue"
+            app:endIconContentDescription="Enter Email"
+            app:endIconDrawable="@drawable/baseline_email_24"
+            app:endIconMode="custom"
+            app:shapeAppearanceOverlay="@style/OutlineRoundShape">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/darkblue"
+                android:id="@+id/txtEmailAdressEdit"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/cellPhoneNumLayoutEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txtphone"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/blackblue"
+            app:endIconContentDescription="Enter cell phone number"
+            app:endIconDrawable="@drawable/baseline_phone_24"
+            app:endIconMode="custom"
+            app:shapeAppearanceOverlay="@style/OutlineRoundShape">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textColor="@color/darkblue"
+                android:id="@+id/txtPhoneNumEdit"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TableLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/PasswordLayoutEdit"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:hint="@string/txtPassword"
+                    app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="@color/blackblue"
+                    app:endIconMode="password_toggle"
+                    app:shapeAppearanceOverlay="@style/OutlineRoundShape">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:id="@+id/txtPasswordEdit"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="360dp"
+            android:layout_height="57dp"
+            android:text="Update"
+            android:id="@+id/btnUpdateAcc"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/shrine_red"
+            app:shapeAppearanceOverlay="@style/OutlineRoundShape" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</ScrollView>
+

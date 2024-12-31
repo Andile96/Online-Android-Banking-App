@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".AdminConsaltantActivity2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/profileFrame"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/greyblue"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/ufs"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <!-- Circular ImageView for Profile Picture -->
+                <ImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/circle_background"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_placeholder" />
+
+                <!-- User Name -->
+                <TextView
+                    android:id="@+id/adConsuserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- User Email -->
+                <TextView
+                    android:id="@+id/adConsuserEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Grey"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_marginTop="210dp"
+      android:gravity="center_horizontal"
+        android:id="@+id/role"
+        android:textColor="@color/darkblue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/Grey">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:textSize="30sp"
+            android:textColor="@color/blackblue"
+            android:textStyle="bold"
+            android:gravity="center"/>
+        <TableLayout
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <!-- First Row -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <!-- View Balance Icon -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgManageCient"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@drawable/square_background"
+                        android:src="@drawable/baseline_supervisor_account_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Manage Clients"
+                        android:textColor="@color/blackblue"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:paddingTop="8dp"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+                <!-- Account Details Icon -->
+                <LinearLayout
+                    android:id="@+id/txtmanangeStaff"
+                    android:visibility="gone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:focusable="true"
+                        android:id="@+id/imgBankStaff"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@drawable/square_background"
+                        android:src="@drawable/baseline_settings_24" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ManageStaff"
+                        android:textColor="@color/blackblue"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:paddingTop="8dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <!-- Payments Icon -->
+                <LinearLayout
+                    android:id="@+id/txtTransaction"
+                    android:visibility="gone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:focusable="true"
+                        android:id="@+id/imgPayment"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@drawable/square_background"
+                        android:src="@drawable/baseline_swap_horiz_24" />
+
+                    <TextView
+
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transaction"
+                        android:textColor="@color/blackblue"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:paddingTop="8dp" />
+                </LinearLayout>
+            </TableRow>
+
+            <!-- Second Row (Personal Details) -->
+
+        </TableLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

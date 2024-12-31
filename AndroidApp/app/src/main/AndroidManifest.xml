@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.UfsQkBank"
+        tools:targetApi="31">
+        <activity
+            android:name=".MakeTransacActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditClientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateClientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageStaffActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminConsaltantActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".StaffActionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InforAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FeedBackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FinancialAdvisorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConsultantActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".TransfareFunds"
+            android:exported="false" />
+        <activity
+            android:name=".AccountIforActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewBalanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PersonalInforActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogInActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/seablue"
+tools:context=".MakeTransacActivity">
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Assist With Transactions"
+    android:textColor="@color/Grey"
+    android:textSize="30sp"
+    android:textStyle="bold"
+    android:layout_marginTop="50dp"
+    android:gravity="center_horizontal"/>
+<ImageView
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:background="@drawable/pay"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="120dp"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:padding="28dp"
+    android:gravity="center">
+    <com.google.android.material.textfield.TextInputLayout
+       android:layout_marginTop="10dp"
+        android:id="@+id/tracUserTypeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TransactionType"
+        android:textColorHint="@color/Grey"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/blackblue"
+        app:shapeAppearanceOverlay="@style/OutlineRoundShape">
+
+        <AutoCompleteTextView
+            android:id="@+id/tracTransacTypeSpn"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:drawableEnd="@android:drawable/arrow_down_float"
+            android:focusable="true"
+            android:inputType="none"
+            android:padding="10dp"
+            android:textColor="@color/Grey"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/tracAccountNumlayout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Bank Acccount Number"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/blackblue"
+        app:endIconContentDescription="Enter Email"
+        android:textColorHint="@color/Grey"
+        app:endIconMode="custom"
+        app:shapeAppearanceOverlay="@style/OutlineRoundShape">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="10"
+            android:id="@+id/tractxtAccountNum"
+            android:textColor="@color/darkblue" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/tracAmountlayout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/blackblue"
+        app:endIconContentDescription="Enter Email"
+        android:textColorHint="@color/Grey"
+        app:endIconMode="custom"
+        app:shapeAppearanceOverlay="@style/OutlineRoundShape">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/tractxtAmount"
+            android:textColor="@color/darkblue" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/tracReferencelayout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Reference"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/blackblue"
+        app:endIconContentDescription="Enter Email"
+        android:textColorHint="@color/Grey"
+        app:endIconMode="custom"
+        app:shapeAppearanceOverlay="@style/OutlineRoundShape">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:id="@+id/tractractxtReference"
+            android:textColor="@color/darkblue" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+
+        android:layout_width="360dp"
+        android:layout_height="57dp"
+        android:text="Execute Transaction"
+        android:id="@+id/tracbtnSent"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/shrine_red"
+        app:shapeAppearanceOverlay="@style/OutlineRoundShape" />
+
+</LinearLayout>
+<RelativeLayout
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_marginTop="100dp">
+
+    <ImageButton
+        android:visibility="invisible"
+        android:id="@+id/traimgbtnSuccessful"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/baseline_check_circle_outline_24" />
+
+    <ImageButton
+        android:visibility="invisible"
+        android:id="@+id/traimgbtnnotSend"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/baseline_cancel_24" />
+
+</RelativeLayout>
+
+
+
+
+</RelativeLayout>

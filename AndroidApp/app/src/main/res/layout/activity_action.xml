@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/seablue"
+    tools:context=".ActionActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View/Edit and Update Infor"
+        android:textSize="20sp"
+        android:textColor="@color/darkblue"
+        android:textAlignment="center" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/greyblue">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Client Information"
+            android:textSize="20sp"
+            android:textColor="@color/darkblue"
+            android:textAlignment="center" />
+
+        <TableLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+
+            <!-- Other TextViews -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="User Type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darkblue"
+                    />
+                <TextView
+                    android:id="@+id/actionttxtIuserType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darkblue"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/actionttxtIStudentStaff"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darkblue"
+                    />
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/actionttxtIStudentStaffNum"
+                    android:layout_weight="4"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darkblue"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darkblue"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/actionttxtIlstName"
+                    android:layout_weight="4"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darkblue"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="First Name"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darkblue"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtIfstName"
+                    android:layout_weight="4"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darkblue"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Nationality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darkblue"
+                    />
+                <TextView
+                    android:id="@+id/actionttxtINationality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darkblue"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/actionttxtIPassportID"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darkblue"
+                    />
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/actionttxtIDIPassportNum"
+                    android:layout_weight="4"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darkblue"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darkblue"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/actionttxtIgender"
+                    android:layout_weight="4"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darkblue"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Birth"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darkblue"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/actionttxtIDOB"
+                    android:layout_weight="4"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darkblue"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darkblue"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/actionttxtIEmail"
+                    android:layout_weight="4"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darkblue"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darkblue"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/actiontxtIPhone"
+                    android:layout_weight="4"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darkblue"
+                    />
+
+            </TableRow>
+        </TableLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:paddingTop="40dp"
+        android:focusableInTouchMode="true"
+       android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/transparent">
+        <TableLayout
+           android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <!-- First Row -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <!-- View Balance Icon -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgAction"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@drawable/square_background"
+                        android:src="@drawable/baseline_edit_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Client Edit"
+                        android:textColor="@color/blackblue"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:paddingTop="8dp"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+                <!-- Account Details Icon -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:focusable="true"
+                        android:id="@+id/imgActionAccountDetails"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@drawable/square_background"
+                        android:src="@drawable/baseline_account_balance_wallet_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Client Account"
+                        android:textColor="@color/blackblue"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:paddingTop="8dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <!-- Payments Icon -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:focusable="true"
+                        android:id="@+id/imgActDelete"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@drawable/square_background"
+                        android:src="@drawable/baseline_delete_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delete Client"
+                        android:textColor="@color/blackblue"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:paddingTop="8dp" />
+                </LinearLayout>
+            </TableRow>
+
+
+        </TableLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:id="@+id/ProfileFrag">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Information"
+        android:textSize="33sp"
+        android:textColor="@color/darkblue"
+        android:textAlignment="center" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+        <!-- Other TextViews -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="User Type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/darkblue"
+                />
+            <TextView
+                android:id="@+id/txtIuserType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/darkblue"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtIStudentStaff"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/darkblue"
+                />
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtIStudentStaffNum"
+                android:layout_weight="4"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/darkblue"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/darkblue"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtIlstName"
+                android:layout_weight="4"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/darkblue"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/darkblue"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtIfstName"
+                android:layout_weight="4"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/darkblue"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+               android:text="Nationality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/darkblue"
+                />
+            <TextView
+                android:id="@+id/txtINationality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/darkblue"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtIPassportID"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/darkblue"
+                />
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtIDIPassportNum"
+                android:layout_weight="4"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/darkblue"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/darkblue"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtIgender"
+                android:layout_weight="4"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/darkblue"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/darkblue"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtIDOB"
+                android:layout_weight="4"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/darkblue"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/darkblue"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtIEmail"
+                android:layout_weight="4"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/darkblue"
+                />
+
+        </TableRow>
+      <TableRow
+          android:layout_marginTop="5dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Phone"
+              android:layout_weight="1"
+              android:textStyle="bold"
+              android:textSize="14sp"
+              android:textColor="@color/darkblue"
+              />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/txtIPhone"
+              android:layout_weight="4"
+              android:textStyle="bold"
+              android:textSize="14sp"
+              android:textColor="@color/darkblue"
+              />
+
+      </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="360dp"
+        android:layout_height="57dp"
+        android:text="Edit"
+        android:id="@+id/btnEdit"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/shrine_red"
+        app:shapeAppearanceOverlay="@style/OutlineRoundShape"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
