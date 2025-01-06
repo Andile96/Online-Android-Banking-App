@@ -7,7 +7,7 @@
     android:background="@color/seablue"
     tools:context=".TransactionHistoryFragment">
 
-    <!-- Header Text -->
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,7 +18,6 @@
         android:layout_marginTop="10dp"
         android:gravity="center_horizontal" />
 
-    <!-- Table Headers -->
     <TableRow
         android:layout_marginStart="10dp"
         android:layout_marginTop="50dp"
@@ -53,7 +52,7 @@
             android:layout_weight="1" />
     </TableRow>
 
-    <!-- ListView to Display Transactions -->
+
     <ListView
         android:id="@+id/lstTransacHst"
         android:layout_width="match_parent"

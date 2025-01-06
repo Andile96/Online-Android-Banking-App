@@ -37,7 +37,7 @@
         android:layout_marginTop="110dp"
         android:gravity="center_horizontal" />
 
-    <!-- Table Headers -->
+
     <TableRow
         android:layout_marginStart="10dp"
         android:layout_marginTop="140dp"
@@ -75,7 +75,6 @@
             android:layout_weight="1" />
     </TableRow>
 
-    <!-- ListView to Display Transactions -->
     <ListView
         android:id="@+id/lstClients"
         android:layout_width="match_parent"

@@ -36,7 +36,7 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
 
-                <!-- Circular ImageView for Profile Picture -->
+
                 <ImageView
                     android:id="@+id/profileImage"
                     android:layout_width="100dp"
@@ -46,7 +46,6 @@
                     android:scaleType="centerCrop"
                     android:src="@drawable/profile_placeholder" />
 
-                <!-- User Name -->
                 <TextView
                     android:id="@+id/adConsuserName"
                     android:layout_width="wrap_content"
@@ -56,7 +55,7 @@
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
-                <!-- User Email -->
+
                 <TextView
                     android:id="@+id/adConsuserEmail"
                     android:layout_width="wrap_content"
@@ -102,13 +101,13 @@
             android:layout_gravity="center_vertical"
             android:gravity="center">
 
-            <!-- First Row -->
+
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center">
 
-                <!-- View Balance Icon -->
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -136,7 +135,6 @@
 
                 </LinearLayout>
 
-                <!-- Account Details Icon -->
                 <LinearLayout
                     android:id="@+id/txtmanangeStaff"
                     android:visibility="gone"
@@ -167,7 +165,6 @@
                         android:textStyle="bold"/>
                 </LinearLayout>
 
-                <!-- Payments Icon -->
                 <LinearLayout
                     android:id="@+id/txtTransaction"
                     android:visibility="gone"
@@ -200,7 +197,7 @@
                 </LinearLayout>
             </TableRow>
 
-            <!-- Second Row (Personal Details) -->
+
 
         </TableLayout>
 

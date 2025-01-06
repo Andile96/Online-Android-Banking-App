@@ -308,13 +308,13 @@
             android:layout_gravity="center_vertical"
             android:gravity="center">
 
-            <!-- First Row -->
+
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center">
 
-                <!-- View Balance Icon -->
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"

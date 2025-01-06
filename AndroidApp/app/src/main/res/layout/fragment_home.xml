@@ -32,13 +32,11 @@
             android:layout_gravity="center_vertical"
             android:gravity="center">
 
-            <!-- First Row -->
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center">
 
-                <!-- View Balance Icon -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -66,7 +64,6 @@
 
                 </LinearLayout>
 
-                <!-- Account Details Icon -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -93,7 +90,6 @@
                         android:textStyle="bold"/>
                 </LinearLayout>
 
-                <!-- Payments Icon -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -121,7 +117,6 @@
                 </LinearLayout>
             </TableRow>
 
-            <!-- Second Row (Personal Details) -->
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

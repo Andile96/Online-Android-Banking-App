@@ -32,7 +32,6 @@
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <!-- Circular ImageView for Profile Picture -->
             <ImageView
                 android:id="@+id/advicprofileImage"
                 android:layout_width="100dp"
@@ -42,7 +41,6 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/profile_placeholder" />
 
-            <!-- User Name -->
             <TextView
                 android:id="@+id/FAuserName"
                 android:layout_width="wrap_content"
@@ -53,7 +51,6 @@
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <!-- User Email -->
             <TextView
                 android:id="@+id/FAuserEmail"
                 android:layout_width="wrap_content"
@@ -91,7 +88,6 @@
                 android:layout_weight="1" />
         </TableRow>
 
-        <!-- ListView to Display Transactions -->
         <ListView
             android:id="@+id/lstBankAcc"
             android:layout_width="match_parent"

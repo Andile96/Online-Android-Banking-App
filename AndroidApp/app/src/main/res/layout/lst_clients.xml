@@ -12,7 +12,6 @@
         android:background="@drawable/border_background"
         android:padding="5dp">
 
-    <!-- Data Row -->
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
